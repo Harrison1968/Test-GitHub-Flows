@@ -31,10 +31,8 @@ FUNC(void, RTE_CODE) ProcessEsp20msg10ms_NetIoMgr(void)
     /* local variable */
     uint16 pecinif_cirmwhl_vw_in = 0u;
     uint16 pecinif_cirmwhl_vw_out;
-    uint8 pecinif_notoothwhlsens_vw_in = 0u;
-    uint8 pecinif_notoothwhlsens_vw_out;
 
-	if(Rte_IsUpdated_NetIoMgr_RP_IF_ESP_Zaehnezahl_XIX_Grundumfang_XIX_LE_TWIN_DE_ESP_Zaehnezahl())
+	if(Rte_IsUpdated_NetIoMgr_RP_IF_BR_Reifenumfang_XIX_Grundumfang_XIX_LE_TWIN_DE_BR_Reifenumfang())
 	{
 		/* Network Representation 1 -  Rx */
 		/* R_BR_Reifenumfang_BR_Reifenumfang to PECInIf_cirmWhl_VW_PECInIf_cirmWhl_VW */
@@ -43,13 +41,6 @@ FUNC(void, RTE_CODE) ProcessEsp20msg10ms_NetIoMgr(void)
 		pecinif_cirmwhl_vw_out = (((uint16)pecinif_cirmwhl_vw_in * NETIOMGR_FAC_1U) + (NETIOMGR_OFFS_0));
 		(void)Rte_Write_PECInIf_cirmWhl_VW_PECInIf_cirmWhl_VW(pecinif_cirmwhl_vw_out);
 	
-	    /* Network Representation 2 -  Rx */
-		/* R_ESP_Zaenezahl_ESP_Zaenezahl to PECInIf_noToothWhlSens_VW_PECInIf_noToothWhlSens_VW */
-		(void)Rte_Read_RP_IF_ESP_Zaehnezahl_XIX_Grundumfang_XIX_LE_TWIN_DE_ESP_Zaehnezahl(&pecinif_notoothwhlsens_vw_in);
-	
-		pecinif_notoothwhlsens_vw_out = (((uint8)pecinif_notoothwhlsens_vw_in * NETIOMGR_FAC_1U) + (NETIOMGR_OFFS_0));
-		(void)Rte_Write_PECInIf_noToothWhlSens_VW_PECInIf_noToothWhlSens_VW(pecinif_notoothwhlsens_vw_out);
-		(void)Rte_Write_ToothNr_NrVal(pecinif_notoothwhlsens_vw_out);
 	}
 }
 
