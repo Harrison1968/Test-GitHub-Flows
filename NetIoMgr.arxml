@@ -6032,34 +6032,6 @@
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PEC_pkg/PEC_if/PECInIf_nMin_VW</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="BEBEF03F-6AAB-4141-B382-BDA038A4DA10">
-              <SHORT-NAME>PECInIf_noToothWhlSens_VW</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <PROVIDED-COM-SPECS>
-                <NONQUEUED-SENDER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PEC_pkg/PEC_if/PECInIf_noToothWhlSens_VW/PECInIf_noToothWhlSens_VW</DATA-ELEMENT-REF>
-                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                  <INIT-VALUE>
-                    <APPLICATION-VALUE-SPECIFICATION>
-                      <CATEGORY>VALUE</CATEGORY>
-                      <SW-VALUE-CONT>
-                        <UNIT-REF DEST="UNIT">/AUTOSAR_AISpecification/Units/NoUnit</UNIT-REF>
-                        <SW-VALUES-PHYS>
-                          <V>0</V>
-                        </SW-VALUES-PHYS>
-                      </SW-VALUE-CONT>
-                    </APPLICATION-VALUE-SPECIFICATION>
-                  </INIT-VALUE>
-                </NONQUEUED-SENDER-COM-SPEC>
-              </PROVIDED-COM-SPECS>
-              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PEC_pkg/PEC_if/PECInIf_noToothWhlSens_VW</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
             <P-PORT-PROTOTYPE UUID="D5F8D099-B080-4B60-9AD9-707BAD8D9FA5">
               <SHORT-NAME>PECInIf_stClu_VW</SHORT-NAME>
               <ADMIN-DATA>
@@ -6711,30 +6683,6 @@
               </REQUIRED-COM-SPECS>
               <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/Em1ReleaseInfoWfs</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
-            <R-PORT-PROTOTYPE UUID="81688F21-2A80-4BA1-818C-141B9C41EC06">
-              <SHORT-NAME>RP_IF_BR_QBit_Reifenumfang_XIX_Grundumfang_XIX_LE_TWIN</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <REQUIRED-COM-SPECS>
-                <NONQUEUED-RECEIVER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BR_QBit_Reifenumfang/DE_BR_QBit_Reifenumfang</DATA-ELEMENT-REF>
-                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
-                  <INIT-VALUE>
-                    <NUMERICAL-VALUE-SPECIFICATION>
-                      <VALUE>0</VALUE>
-                    </NUMERICAL-VALUE-SPECIFICATION>
-                  </INIT-VALUE>
-                </NONQUEUED-RECEIVER-COM-SPEC>
-              </REQUIRED-COM-SPECS>
-              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_BR_QBit_Reifenumfang</REQUIRED-INTERFACE-TREF>
-            </R-PORT-PROTOTYPE>
             <R-PORT-PROTOTYPE UUID="6B145D95-0B7F-4132-B66F-F969A5B99989">
               <SHORT-NAME>RP_IF_BR_Reifenumfang_XIX_Grundumfang_XIX_LE_TWIN</SHORT-NAME>
               <ADMIN-DATA>
@@ -6749,6 +6697,7 @@
                   <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BR_Reifenumfang/DE_BR_Reifenumfang</DATA-ELEMENT-REF>
                   <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
                   <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>true</ENABLE-UPDATE>
                   <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
                   <INIT-VALUE>
                     <NUMERICAL-VALUE-SPECIFICATION>
@@ -6866,31 +6815,6 @@
                 </NONQUEUED-RECEIVER-COM-SPEC>
               </REQUIRED-COM-SPECS>
               <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_ESP_VR_Radgeschw_02</REQUIRED-INTERFACE-TREF>
-            </R-PORT-PROTOTYPE>
-            <R-PORT-PROTOTYPE UUID="82E041C9-5993-49AC-8F40-6166FA96813E">
-              <SHORT-NAME>RP_IF_ESP_Zaehnezahl_XIX_Grundumfang_XIX_LE_TWIN</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <REQUIRED-COM-SPECS>
-                <NONQUEUED-RECEIVER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_ESP_Zaehnezahl/DE_ESP_Zaehnezahl</DATA-ELEMENT-REF>
-                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                  <ENABLE-UPDATE>true</ENABLE-UPDATE>
-                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
-                  <INIT-VALUE>
-                    <NUMERICAL-VALUE-SPECIFICATION>
-                      <VALUE>0</VALUE>
-                    </NUMERICAL-VALUE-SPECIFICATION>
-                  </INIT-VALUE>
-                </NONQUEUED-RECEIVER-COM-SPEC>
-              </REQUIRED-COM-SPECS>
-              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_ESP_Zaehnezahl</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
             <R-PORT-PROTOTYPE UUID="3253BEDF-F0C1-4A6B-80AA-7BA4F1313435">
               <SHORT-NAME>RP_IF_eTM_Pumpe1_Status_XIX_Grundumfang_XIX_LE_TWIN</SHORT-NAME>
@@ -12336,34 +12260,6 @@
               </REQUIRED-COM-SPECS>
               <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Schaeffler/PortInterfaces/TOilCooltVolFlow</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="5EEB4880-EEE7-481E-B255-8F29CC43FF36">
-              <SHORT-NAME>ToothNr</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <PROVIDED-COM-SPECS>
-                <NONQUEUED-SENDER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Schaeffler/PortInterfaces/ToothNr/NrVal</DATA-ELEMENT-REF>
-                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                  <INIT-VALUE>
-                    <APPLICATION-VALUE-SPECIFICATION>
-                      <CATEGORY>VALUE</CATEGORY>
-                      <SW-VALUE-CONT>
-                        <UNIT-REF DEST="UNIT">/AUTOSAR_AISpecification/Units/NoUnit</UNIT-REF>
-                        <SW-VALUES-PHYS>
-                          <V>0</V>
-                        </SW-VALUES-PHYS>
-                      </SW-VALUE-CONT>
-                    </APPLICATION-VALUE-SPECIFICATION>
-                  </INIT-VALUE>
-                </NONQUEUED-SENDER-COM-SPEC>
-              </PROVIDED-COM-SPECS>
-              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Schaeffler/PortInterfaces/ToothNr</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
             <P-PORT-PROTOTYPE UUID="39547321-DC1F-4260-AFB2-A40F0752F180">
               <SHORT-NAME>VehTiOff</SHORT-NAME>
               <ADMIN-DATA>
@@ -13735,33 +13631,6 @@
               </REQUIRED-COM-SPECS>
               <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/IF_OBD_Minimum_Trip</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="749FFB4B-21C0-478E-8852-F485B6BD58CF">
-              <SHORT-NAME>VehVActState</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <PROVIDED-COM-SPECS>
-                <NONQUEUED-SENDER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/VehVActState/bool</DATA-ELEMENT-REF>
-                  <INIT-VALUE>
-                    <APPLICATION-VALUE-SPECIFICATION>
-                      <CATEGORY>VALUE</CATEGORY>
-                      <SW-VALUE-CONT>
-                        <UNIT-REF DEST="UNIT">/Schaeffler/DataTypes/Units/NoUnit</UNIT-REF>
-                        <SW-VALUES-PHYS>
-                          <V>0</V>
-                        </SW-VALUES-PHYS>
-                      </SW-VALUE-CONT>
-                    </APPLICATION-VALUE-SPECIFICATION>
-                  </INIT-VALUE>
-                </NONQUEUED-SENDER-COM-SPEC>
-              </PROVIDED-COM-SPECS>
-              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/VehVActState</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
           </PORTS>
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="342E47E2-2157-44E2-8E2E-CE9E1F43C792">
@@ -13785,6 +13654,7 @@
                   <PERIOD>0.01</PERIOD>
                 </TIMING-EVENT>
               </EVENTS>
+              <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
               <PORT-API-OPTIONS>
                 <PORT-API-OPTION>
                   <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
@@ -14409,15 +14279,6 @@
                         <AUTOSAR-VARIABLE-IREF>
                           <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/NetIoMgr/VehVAct</PORT-PROTOTYPE-REF>
                           <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Schaeffler/PortInterfaces/VehVAct/VVal</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="16ECA8E4-24BF-483C-9BA6-54945CF49DFC">
-                      <SHORT-NAME>SEND_VehVActState_bool</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/NetIoMgr/VehVActState</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/VehVActState/bool</TARGET-DATA-PROTOTYPE-REF>
                         </AUTOSAR-VARIABLE-IREF>
                       </ACCESSED-VARIABLE>
                     </VARIABLE-ACCESS>
@@ -15120,15 +14981,6 @@
                         </AUTOSAR-VARIABLE-IREF>
                       </ACCESSED-VARIABLE>
                     </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="CDCA8CF0-A33C-4DB7-AB21-F55A285AFE61">
-                      <SHORT-NAME>REC_RP_IF_BR_QBit_Reifenumfang_XIX_Grundumfang_XIX_LE_TWIN_DE_BR_QBit_Reifenumfang</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/NetIoMgr/RP_IF_BR_QBit_Reifenumfang_XIX_Grundumfang_XIX_LE_TWIN</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_BR_QBit_Reifenumfang/DE_BR_QBit_Reifenumfang</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
                     <VARIABLE-ACCESS UUID="4FD78652-5DB8-4C8F-9DD7-45DA71044C9D">
                       <SHORT-NAME>REC_RP_IF_BR_Reifenumfang_XIX_Grundumfang_XIX_LE_TWIN_DE_BR_Reifenumfang</SHORT-NAME>
                       <ACCESSED-VARIABLE>
@@ -15171,15 +15023,6 @@
                         <AUTOSAR-VARIABLE-IREF>
                           <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/NetIoMgr/RP_IF_ESP_VR_Radgeschw_02_XIX_Grundumfang_XIX_LE_TWIN</PORT-PROTOTYPE-REF>
                           <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_ESP_VR_Radgeschw_02/DE_ESP_VR_Radgeschw_02</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="619B18C9-A9CA-4C08-8357-B07653C0C51F">
-                      <SHORT-NAME>REC_RP_IF_ESP_Zaehnezahl_XIX_Grundumfang_XIX_LE_TWIN_DE_ESP_Zaehnezahl</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/NetIoMgr/RP_IF_ESP_Zaehnezahl_XIX_Grundumfang_XIX_LE_TWIN</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/IF_ESP_Zaehnezahl/DE_ESP_Zaehnezahl</TARGET-DATA-PROTOTYPE-REF>
                         </AUTOSAR-VARIABLE-IREF>
                       </ACCESSED-VARIABLE>
                     </VARIABLE-ACCESS>
@@ -16481,15 +16324,6 @@
                         </AUTOSAR-VARIABLE-IREF>
                       </ACCESSED-VARIABLE>
                     </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="8F73F0D9-59A0-45C5-BA62-16D199A0BEBE">
-                      <SHORT-NAME>SEND_PECInIf_noToothWhlSens_VW_PECInIf_noToothWhlSens_VW</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/NetIoMgr/PECInIf_noToothWhlSens_VW</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PEC_pkg/PEC_if/PECInIf_noToothWhlSens_VW/PECInIf_noToothWhlSens_VW</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
                     <VARIABLE-ACCESS UUID="B9A01B5F-603C-4278-AC6C-0DC1D27CDAC7">
                       <SHORT-NAME>SEND_PECInIf_stClu_VW_PECInIf_stClu_VW</SHORT-NAME>
                       <ACCESSED-VARIABLE>
@@ -17558,15 +17392,6 @@
                         <AUTOSAR-VARIABLE-IREF>
                           <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/NetIoMgr/SP_WfsImmoMsg4</PORT-PROTOTYPE-REF>
                           <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/WfsImmoMsg4/StsVal</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="A44B4899-A37E-4AF6-8287-F8F92E7717F7">
-                      <SHORT-NAME>SEND_ToothNr_NrVal</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/NetIoMgr/ToothNr</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Schaeffler/PortInterfaces/ToothNr/NrVal</TARGET-DATA-PROTOTYPE-REF>
                         </AUTOSAR-VARIABLE-IREF>
                       </ACCESSED-VARIABLE>
                     </VARIABLE-ACCESS>
